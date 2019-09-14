@@ -20,11 +20,14 @@ class LinebotController < ApplicationController
     end
 
     events = client.parse_events_from(body)
-    response = "儚い..."
+
     if events.message['text'].include?("薫")
       response = "やあ、子猫ちゃん"
     elsif events.message['text'].include?("こと？")
       response = "つまり、そういうことさ..."
+    else
+      response = "儚い..."
+    end
     
     events.each { |event|
     case event
