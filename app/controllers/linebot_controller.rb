@@ -20,6 +20,8 @@ class LinebotController < ApplicationController
     end
 
     events = client.parse_events_from(body)
+    array ["つまり、そういうことさ...", "儚い..."]
+    response = array.rand(2)
 
     events.each { |event|
       case event
@@ -28,7 +30,7 @@ class LinebotController < ApplicationController
         when Line::Bot::Event::MessageType::Text
           message = {
             type: 'text',
-            text: event.message['text']
+            text: response
           }
           client.reply_message(event['replyToken'], message)
         end
