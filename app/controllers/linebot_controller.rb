@@ -20,7 +20,7 @@ class LinebotController < ApplicationController
     end
 
     events = client.parse_events_from(body)
-    array ["つまり、そういうことさ...", "儚い..."]
+    array = ["つまり、そういうことさ...", "儚い..."]
     response = array.rand(2)
 
     events.each { |event|
