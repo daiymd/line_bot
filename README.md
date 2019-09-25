@@ -1,24 +1,13 @@
-# README
+# line_bot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# どんなアプリケーション？
+送信したメッセージの語尾にピカを付けておうむ返しするLINEbot
 
-Things you may want to cover:
+# なぜこのアプリを作ったのか
+他の人が作っているのを見て、面白そうだったから自分でも作ってみた。また、自分で作ったものを友人に見せたかったため。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 開発環境
+- Ruby
+- Ruby on Rails
+- PostgreSQL
+- Heroke
